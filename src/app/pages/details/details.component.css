@@ -159,12 +159,6 @@
   align-items: center;
 }
 
-/*
-================
-     BODY
-================
-*/
-
 .body-content__wrapper {
   display: grid;
   grid-template-columns: 1fr 1.5fr;

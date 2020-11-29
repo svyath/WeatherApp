@@ -1,8 +1,3 @@
-/*
-====================
-Weather Card Styling
-====================
-*/
 .weather__card {
   display: grid;
   grid-template-columns: 1fr;
@@ -27,8 +22,7 @@ Weather Card Styling
 }
 
 .weather__card-dark {
-  /*background: linear-gradient(to bottom, #711B86, #00057A);*/
-background: linear-gradient(to bottom, #372865, #000000);
+background: linear-gradient(to bottom,#41295a,#2F0743);
   color: white;
 }
 
