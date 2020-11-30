@@ -111,15 +111,6 @@
   height: 100%;
 }
 
-.fav-city-image {;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  border-radius: 0 1rem 1rem 0;
-  height: 100%;
-}
-
-
 .fav-city-image-overlay {
   min-height: 100%;
   width: 100%;
