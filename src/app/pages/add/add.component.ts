@@ -12,7 +12,7 @@ import {first} from 'rxjs/operators';
 export class AddComponent implements OnInit, OnDestroy {
 
   temp: number;
-  city = 'Rome';
+  city = 'Stockholm';
   state: string;
   capitals = [];
   selectedCity;
@@ -43,7 +43,7 @@ export class AddComponent implements OnInit, OnDestroy {
 
     this.sub1 = this.fb.getCities().subscribe((cities) => {
       Object.values(cities).forEach((city: any) => {
-        if (city.name === 'Rome') {
+        if (city.name === 'Stockholm') {
           this.followedCM = true;
         }
       });
@@ -60,7 +60,7 @@ export class AddComponent implements OnInit, OnDestroy {
   }
 
   addCityOfTheMonth() {
-    this.fb.addCity('Rome').subscribe(() => {
+    this.fb.addCity('Stockholm').subscribe(() => {
       this.followedCM = true;
     });
   }
