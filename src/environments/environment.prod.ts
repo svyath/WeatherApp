@@ -1,5 +1,5 @@
 export const environment = {
-  production: false,
+  production: true,
   appID: '1:450428813764:web:5b6bd7ee4e29fd33032491',
   config: {
     apiKey: 'AIzaSyC1DxNbUONpbK0ZmtzpElpKJ5ta7AzOltU',
@@ -10,5 +10,3 @@ export const environment = {
     messagingSenderId: '450428813764'
   }
 };
-
-
