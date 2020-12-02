@@ -1,6 +1,31 @@
 <div class="add-wrapper">
+ 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyB_6emCIzSBlCuT41Lj5mV9W4h9b2NzIt0",
+    authDomain: "shweather-app.firebaseapp.com",
+    databaseURL: "https://shweather-app.firebaseio.com",
+    projectId: "shweather-app",
+    storageBucket: "shweather-app.appspot.com",
+    messagingSenderId: "155496490413",
+    appId: "1:155496490413:web:ab9f987341b1032fd72d24",
+    measurementId: "G-GXN1GZRWMP"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   
-  <section class="main-card">
+<section class="main-card">
 
     <div class="city-search-wrapper">
 
@@ -41,7 +66,7 @@
       <div class="fav-city-header">
         <h3 class="fav-city-title">CITY OF THE MONTH</h3>
         <hr class="fav-city-hr">
-        <span class="fav-city-date">Sunday, 31th July</span>
+        <!-- <span class="fav-city-date">Sunday, 31th July</span> -->
       </div>
 
       <div class="fav-city-body">
