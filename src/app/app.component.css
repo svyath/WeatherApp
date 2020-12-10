@@ -245,10 +245,8 @@
 }
 
 .date__text {
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  display: inline;
-  margin: 0.5rem 0;
+  font-family: cursive;
+  margin-left: -170px;
 }
 
 /*SVGs*/

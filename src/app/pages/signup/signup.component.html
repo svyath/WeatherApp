@@ -3,8 +3,7 @@
 
     <main class="signup-content">
       <span class="signup-header">Signup</span>
-      <!-- signup form -->
-
+    
       <form class="signup-form" (ngSubmit)="signup($event)" #authform="ngForm">
         <input ngModel type="email" autofocus placeholder="Email" name="email" class="signup-input" required>
         <input ngModel type="password" placeholder="Password" name="password" class="signup-input" minlength="6"
@@ -19,7 +18,6 @@
 
     </main>
 
-    <!-- linking to signup -->
     <aside class="signup-aside">
       <div class="signup-aside-overlay"></div>
       <h1 class="signup-welcome-text">Join Us Today!</h1>

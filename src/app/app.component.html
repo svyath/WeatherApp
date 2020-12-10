@@ -10,13 +10,14 @@
 
       <div class="account-details">
         <span class="name__text">{{userEmail}}</span>
-        
       </div>
     </section>
     <section class="menu-body">
       <ul class="menu-links" [ngClass]="{'menu-links-dark': darkModeActive}">
-        <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="" routerLinkActive="link-active" (click)="toggleMenu()">Home</li>
-        <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="/add" routerLinkActive="link-active" (click)="toggleMenu()">Add City</li>
+        <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="" 
+            routerLinkActive="link-active" (click)="toggleMenu()">Home</li>
+        <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="/add" 
+            routerLinkActive="link-active" (click)="toggleMenu()">Add City</li>
         <li (click)="logout()" class="menu-link">Logout</li>
       </ul>
     </section>
@@ -52,23 +53,21 @@
       <svg class="logo__icon" viewBox="150.3 22.2 213.7 42.8">
         <ellipse cx="280" cy="43" rx="160" ry="40"
         style="fill:#2cfdb4;stroke:black;stroke-width:2" />
-        <text class="logo__text" fill="black" font-family="SegoeUI-Semibold,Segoe UI" font-size="35" font-weight="600" transform="translate(165 55)">
+        <text class="logo__text" fill="black" font-family="SegoeUI-Semibold, Segoe UI" font-size="35" font-weight="600" transform="translate(165 55)">
         <tspan x="0" y="0">SH Weather</tspan>
         </text>
         </svg>
     </div>
-<!-- ADD CURRENT DATE -->
-    <h3 class="date__text">Today</h3>
-
+    
+  <h2 class="date__text"> Today: {{myDate | date:'fullDate'}} </h2>
+  
     <div class="mode-toggle__container">
       <span class="mode-toggle__text">Light</span>
-
       <label class="toggle-button__container">
         <input (click)="modeToggleSwitch()" type="checkbox" class="mode-toggle__input"/>
         <span [ngClass]="{'mode-toggle__bg-checked': darkModeActive}" class="mode-toggle__bg"></span>
         <span [ngClass]="{'mode-toggle__circle-checked': darkModeActive}" class="mode-toggle__circle"></span>
       </label>
-
       <span class="mode-toggle__text">Dark</span>
     </div>
 

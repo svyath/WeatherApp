@@ -16,13 +16,13 @@
 }
 
 .add-city-btn {
-  padding: 0.75rem 1.5rem;
   background-color: #003EFF;
   outline: none;
   border: none;
   color: white;
   border-radius: 2rem;
   font-size: 1rem;
+  padding: 1rem 2rem;
 }
 
 .city-search-wrapper {
@@ -31,6 +31,7 @@
   flex: 1 1;
   position: relative;;
   overflow-y: auto;
+  padding: 15px;
 }
 
 .city-search-header {
@@ -229,6 +230,7 @@
 app-weather-card {
   margin: 2rem 0;
   min-width: 28rem;
+  margin-bottom: 20px;
 }
 
 /* Media Query:   LT-XL  */
